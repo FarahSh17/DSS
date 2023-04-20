@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Farah</title>
+
+    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script type="text/javascript">
+        function initViz() {
+            var containerDiv = document.getElementById("vizContainer"),
+                url = "https://public.tableau.com/views/titanicds_16817929268400/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link",
+                options = {
+                    hideTabs: true,
+                };
+
+            var viz = new tableau.Viz(containerDiv, url, options);
+        }
+    </script>
+</head>
+
+<body onload="initViz();">
+    <center><h1>Titanic tableau dashboard</h1></center>
+    <div id="vizContainer" style="width:1320px; height:520px;"></div>
+</body>
+
+</html>
